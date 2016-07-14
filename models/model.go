@@ -45,7 +45,7 @@ func init() {
 	}
 	//
 	UMgr.loadUsers()
-	Blogger = UMgr.Get("deepzz")
+	Blogger = UMgr.Get("Rick")
 	// not found account
 	if Blogger == nil {
 		initAccount()
@@ -62,7 +62,7 @@ func init() {
 }
 
 func initAccount() {
-	b, err := ioutil.ReadFile(path + "conf/init/user.json")
+	b, err := ioutil.ReadFile(path + "/conf/init/user.json")
 	if err != nil {
 		panic(err)
 	}
